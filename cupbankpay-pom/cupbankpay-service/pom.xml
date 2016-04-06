@@ -1,0 +1,136 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.datayp</groupId>
+    <artifactId>cupbankpay-pom</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>cupbankpay-service</artifactId>
+  <name>cupbankpay-service</name>
+  <description>cupbankpay-service</description>
+  <properties>
+  	<!-- <spring.version>4.2.5.RELEASE</spring.version> -->
+  	<!-- <spring.version>4.1.9.RELEASE</spring.version> -->
+  	<spring.version>3.2.16.RELEASE</spring.version>
+  	<spring.304.version>3.0.4.RELEASE</spring.304.version>
+  </properties>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.datayp</groupId>
+  		<artifactId>cupbankpay-interface</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context-support</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <!-- <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-dao</artifactId>
+        <version>${spring.304.version}</version>
+    </dependency> -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-expression</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aop</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aspects</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-tx</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <!-- <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-remoting</artifactId>
+        <version>${spring.304.version}</version>
+    </dependency> -->
+    
+    <!-- mybatis核心包 -->  
+    <dependency>  
+        <groupId>org.mybatis</groupId>  
+        <artifactId>mybatis</artifactId>  
+        <version>${mybatis.version}</version>  
+    </dependency>  
+    <!-- mybatis/spring包 -->  
+    <dependency>  
+        <groupId>org.mybatis</groupId>  
+        <artifactId>mybatis-spring</artifactId>  
+        <version>1.2.2</version>  
+    </dependency>
+    <dependency>  
+        <groupId>commons-dbcp</groupId>  
+        <artifactId>commons-dbcp</artifactId>  
+        <version>1.2.2</version>  
+    </dependency>
+    
+    <dependency>
+        <groupId>log4j</groupId>  
+        <artifactId>log4j</artifactId>  
+        <version>${log4j.version}</version>  
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>  
+        <artifactId>slf4j-api</artifactId>  
+        <version>${slf4j.version}</version>  
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+    
+    <!-- 导入Mysql数据库链接jar包 -->  
+    <dependency>  
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>5.1.38</version>
+        <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-test</artifactId>
+        <version>${spring.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
